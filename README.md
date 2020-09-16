@@ -18,5 +18,3 @@ This package does not return errors. Set operations should be fast and
 chainable; adding items more than once, or attempting to remove things
 that don't exist are not errors.
 
-
-[Full documentation on GoDoc](http://godoc.org/github.com/AchievementNetwork/stringset)

@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/AchievementNetwork/stringset"
+	"github.com/kentquirk/stringset"
 )
 
 func ExampleStringSet_Add() {
