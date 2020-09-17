@@ -1,4 +1,4 @@
-module github.com/kentquirk/stringset/v2
+module github.com/kentquirk/stringset
 
 go 1.14
 
