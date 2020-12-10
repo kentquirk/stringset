@@ -18,3 +18,28 @@ This package does not return errors. Set operations should be fast and
 chainable; adding items more than once, or attempting to remove things
 that don't exist are not errors.
 
+**NOTE**
+This repository contains two versions of this code, conforming to Go's versioning rules.
+Version 1, the original, is in the root of the repository, and conforms to the specification noted above (with negative sets). Documentation for that version is
+[here](https://pkg.go.dev/github.com/kentquirk/stringset).
+
+Version 2 removes the negative sets (they're not generally useful), cleans up the tests, and is a proper Go module. [Documentation](https://pkg.go.dev/github.com/kentquirk/stringset/v2).
+
+# Installation
+
+```bash
+$ go get github.com/kentquirk/stringset/v2
+```
+
+Example usage:
+
+```go
+s := "this is a test it is only a test"
+nodups := stringset.New().Add(strings.Split(s, " ")...).Strings()
+sort.Strings(nodups)
+fmt.Println(nodups)
+```
+Result:
+```text
+[a is it only test this]
+```
